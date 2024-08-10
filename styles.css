@@ -9,7 +9,9 @@ body, html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #87CEEB;
+    background-image: url('bathroom.jpg'); /* 화장실 이미지 파일 경로 */
+    background-size: cover; /* 배경 이미지가 컨테이너를 완전히 덮도록 조정 */
+    background-position: center; /* 배경 이미지를 컨테이너의 중앙에 위치시킴 */
     overflow: hidden;
 }
 
@@ -45,3 +47,4 @@ body, html {
     color: white;
     font-size: 20px;
 }
+s
