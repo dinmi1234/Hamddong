@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 50px; /* 이미지의 원본 비율을 유지하기 위한 크기 설정 */
+    height: 50px; /* 이미지의 원본 비율을 유지하기 위한 크기 설정 */
+    background-image: url('player.png'); /* 사람 모양의 이미지 */
+    background-size: contain; /* 비율 유지 */
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+}
+
+.dung {
+    position: absolute;
+    top: 0;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 30px; /* 이미지 크기에 맞게 조정 */
+    background-image: url('dung.png'); /* 똥 모양의 이미지 */
+    background-size: contain; /* 비율 유지 */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+}
