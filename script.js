@@ -113,4 +113,9 @@ function startGame() {
     dungInterval = setInterval(createDung, dungIntervalTime);
 }
 
+// 마우스 클릭 시 추가 똥 생성
+gameContainer.addEventListener('click', function() {
+    createDung();
+});
+
 startGame();
